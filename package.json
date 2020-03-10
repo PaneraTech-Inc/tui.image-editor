@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.image-editor.git"
+    "url": "https://github.com/gunjankothari/tui.image-editor.git"
   },
   "main": "dist/tui-image-editor.js",
   "files": [

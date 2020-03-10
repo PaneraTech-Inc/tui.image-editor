@@ -445,8 +445,8 @@ class Graphics {
         this.setCanvasCssDimension({
             width: '100%',
             height: '100%', // Set height '' for IE9
-            'max-width': `${maxDimension.width}px`,
-            'max-height': `${maxDimension.height}px`
+            'width': `${maxDimension.width}px`,
+            'height': `${maxDimension.height}px`
         });
 
         this.setCanvasBackstoreDimension({
