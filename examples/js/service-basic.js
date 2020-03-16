@@ -511,6 +511,8 @@ $selectLine.on('change', function() {
     imageEditor.stopDrawingMode();
     if (mode === 'freeDrawing') {
         imageEditor.startDrawingMode('FREE_DRAWING', settings);
+    } else if(mode === 'arrowDrawing') {
+        imageEditor.startDrawingMode('ARROW_DRAWING', settings);
     } else {
         imageEditor.startDrawingMode('LINE_DRAWING', settings);
     }

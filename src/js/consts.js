@@ -16,6 +16,7 @@ module.exports = {
         'ROTATION',
         'FREE_DRAWING',
         'LINE',
+        'ARROW_DRAWING',
         'TEXT',
         'ICON',
         'FILTER',
@@ -83,6 +84,7 @@ module.exports = {
         'CROPPER',
         'FREE_DRAWING',
         'LINE_DRAWING',
+        'ARROW_DRAWING',
         'TEXT',
         'SHAPE'
     ),
