@@ -68,6 +68,7 @@ class Draw extends Submenu {
         this.type = null;
         this.actions.stopDrawingMode();
         this.actions.changeSelectableAll(true);
+        this._els.lineSelectButton.classList.remove('arrow');
         this._els.lineSelectButton.classList.remove('free');
         this._els.lineSelectButton.classList.remove('line');
     }
@@ -76,8 +77,8 @@ class Draw extends Submenu {
      * Executed when the menu starts.
      */
     changeStartMode() {
-        this.type = 'free';
-        this._els.lineSelectButton.classList.add('free');
+        this.type = 'arrow';
+        this._els.lineSelectButton.classList.add('arrow');
         this.setDrawMode();
     }
 
@@ -89,7 +90,7 @@ class Draw extends Submenu {
     _changeDrawType(event) {
         const button = event.target.closest('.tui-image-editor-button');
         if (button) {
-            const lineType = this.getButtonType(button, ['free', 'line']);
+            const lineType = this.getButtonType(button, ['arrow', 'free', 'line']);
             this.actions.discardSelection();
 
             if (this.type === lineType) {

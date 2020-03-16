@@ -7,6 +7,17 @@
 export default ({locale, iconStyle: {normal, active}}) => (`
     <ul class="tui-image-editor-submenu-item">
         <li class="tie-draw-line-select-button">
+            <div class="tui-image-editor-button arrow">
+                <div>
+                    <svg class="svg_ic-submenu">
+                        <use xlink:href="${normal.path}#${normal.name}-ic-icon-arrow" class="normal"/>
+                        <use xlink:href="${active.path}#${active.name}-ic-icon-arrow" class="active"/>
+                    </svg>
+                </div>
+                <label>
+                    Arrow
+                </label>
+            </div>
             <div class="tui-image-editor-button free">
                 <div>
                     <svg class="svg_ic-submenu">
