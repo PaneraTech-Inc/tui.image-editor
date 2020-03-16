@@ -8,9 +8,7 @@ const LineArrow = fabric.util.createClass(fabric.Line, {
             options = {};
         }
         this.callSuper('initialize', element, options);
-        this.options = options
-        // this.canvas = canvas;
-        // this.options = options;
+        this.options = options;
     },
 
     // toObject: () => fabric.util.object.extend(this.callSuper('toObject')),
@@ -31,7 +29,7 @@ const LineArrow = fabric.util.createClass(fabric.Line, {
     },
 
     drawArrow(angle, xPos, yPos, head) {
-        const arrowSize = this.options.strokeWidth*2;
+        const arrowSize = this.options.strokeWidth * 2;
         if (head) {
             this.ctx.translate(xPos, yPos);
             this.ctx.rotate(angle);
